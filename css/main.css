@@ -4,11 +4,15 @@ body {
 	font-size: 0.8em;
 }
 
-/*link styles*/
+/*link style*/
 a {
 	text-decoration: none;
 	margin: 5px;
 }
+
+
+
+/*navigation styles*/
 
 nav {
 	text-align: right;
@@ -23,30 +27,24 @@ nav a:hover {
 	text-decoration: underline;
 }
 
+nav li {
+	display: inline-block;
+	margin: 10px;
+}
+
+
 .logo {
 	margin: 130px auto 20px auto;
 	width: 280px;
 	display: block;
 }
 
-/*align footer left*/
 
-#leftfooter {
-	margin-left: 20px;
-	float: left;
-	padding: 10px;
-
+section {
+	text-align: center;
 }
 
-/*right footer styles */
-#rightfooter {
-	/*margin-top: 150px;*/
-	float: right;
-	margin-left: 20px;
-	padding: 10px;
-
-}
-
+/*input*/
 
 input {
 	font-size: inherit;
@@ -70,16 +68,37 @@ input[type='text']{
 	margin-bottom: 100px;
 }
 
-nav li {
-	display: inline-block;
-	margin: 10px;
+#login input{
+	background-color: rgb(70, 131, 233);
+	border: 1px solid #ddd;
+	padding:6px 9px;
+	color: white;
+	font-weight: bold;
+	border-radius: 4px;
+
+}
+
+/*/footer styles/*/
+
+#leftfooter {
+	margin-left: 20px;
+	float: left;
+	padding: 10px;
+
+}
+
+#rightfooter {
+	float: right;
+	margin-left: 20px;
+	padding: 10px;
+
 }
 
 footer {
 	width: 100%;
-	background-color: #C0C0C0;
+	background-color: rgb(230,230,230);
 	border-top: 1px solid #ddd;
-	height: 50px;
+	height: 40px;
 	position: absolute;
 	top: 615px;
 	padding-top: 8px;
@@ -89,17 +108,13 @@ footer a:hover {
 	text-decoration: underline;
 }
 
-#login input{
-	background-color: blue;
-	border: 1px solid #ddd
-}
-
-
-section {
-	text-align: center;
-}
-
-
 footer a {
 	color: black; 
 }
+
+
+
+
+
+
+
