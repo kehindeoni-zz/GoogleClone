@@ -7,7 +7,7 @@ body {
 /*link style*/
 a {
 	text-decoration: none;
-	margin: 5px;
+	margin: 0px 5px;
 }
 
 
@@ -16,7 +16,7 @@ a {
 
 nav {
 	text-align: right;
-	margin: 18px 5px 0 0;
+	margin: 10px 7px 0 0;
 }
 
 nav li a {
@@ -30,8 +30,16 @@ nav a:hover {
 nav li {
 	display: inline-block;
 	margin: 10px;
+	padding-left: 5px;
 }
 
+li img {
+	opacity: 0.7;
+}
+ 
+li img:hover {
+	opacity: 1;
+}
 
 .logo {
 	margin: 130px auto 20px auto;
@@ -51,12 +59,17 @@ input {
 	}
 
 input[type='text']{
-	width: 500px;
-	height: 30px;
+	outline: none;
+	width: 550px;
+	height: 25px;
 	border: 1px solid #ddd;
 	margin-left: 430px;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	background: url("../img/voicee.png") no-repeat 99% center;
+}
+
+input[type='text']:focus {
+	border-color: blue;
 }
 
 #find input{
@@ -66,16 +79,26 @@ input[type='text']{
 	margin: 2px;
 	font-weight: bold;
 	margin-bottom: 100px;
+	opacity: 0.8;
 }
 
 #login input{
+	margin-right: 25px;
 	background-color: rgb(70, 131, 233);
 	border: 1px solid #ddd;
-	padding:6px 9px;
+	padding: 8px 12px;
 	color: white;
 	font-weight: bold;
-	border-radius: 4px;
+	border-radius: 2px;
+	border: none;
+}
 
+#login input:hover {
+	box-shadow:  0px 0px 1px rgb(70, 131, 233);
+}
+
+#find input {
+	margin-left: 8px;
 }
 
 /*/footer styles/*/
